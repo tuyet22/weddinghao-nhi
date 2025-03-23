@@ -1,0 +1,690 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Montserrat:wght@300;600&display=swap');
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Định dạng chung */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FAF3F0;
+    color: #333;
+}
+
+#banner {
+    width: 100%;
+    height: 500px; /* Điều chỉnh chiều cao */
+    overflow: hidden;
+}
+
+#banner .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ảnh không bị méo */
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); /* Hiệu ứng nền mờ */
+    padding: 15px 30px;
+    border-radius: 10px;
+}
+
+.carousel-caption h2 {
+    color: #fff;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    color: #fff;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+
+/* Navigation */
+.navbar {
+    background: #fff;
+    padding: 15px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #D48C8C;
+    padding: 8px 15px;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #fff;
+    background: #D48C8C;
+    border-radius: 5px;
+}
+
+/* Căn chỉnh chung */
+section {
+    text-align: center;
+    margin: 50px auto;
+}
+
+/* Cô dâu & chú rể */
+.bride-groom-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.person {
+    text-align: center;
+}
+
+.person img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #f8d7da;
+}
+
+/* Lịch trình */
+.schedule-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.event {
+    background: #fff3f4;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Sự kiện cưới */
+.event-section {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 20px;
+}
+
+.event-box {
+    background: white;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.event-box h3 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    color: #D48C8C;
+}
+
+/* Form gửi lời chúc */
+.wish-form {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.wish-form button {
+    background: #D48C8C;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.wish-form button:hover {
+    background: #A86D6D;
+}
+
+/* Album Ảnh */
+.album {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    padding: 50px 20px;
+}
+
+.album img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.wedding-footer {
+    background: #fff; /* Màu nền trắng */
+    text-align: center;
+    padding: 50px 20px;
+    position: relative;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.footer-image img {
+    width: 180px; /* Điều chỉnh kích thước hình */
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.footer-text {
+    font-family: 'Dancing Script', cursive;
+    font-size: 28px;
+    color: #333;
+    margin: 5px 0;
+}
+
+.heart-decoration {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+}
+
+.heart-decoration.left {
+    top: 10px;
+    left: 50px;
+}
+
+.heart-decoration.right {
+    top: 30px;
+    right: 50px;
+}
+
+/* Khu vực chứa hiệu ứng */
+#heart-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Để không ảnh hưởng đến các thao tác khác */
+    overflow: hidden;
+}
+
+/* Khu vực chứa trái tim */
+#heart-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Không ảnh hưởng đến click */
+    overflow: hidden;
+}
+
+/* Style trái tim */
+.heart {
+    position: absolute;
+    color: #ff4d6d;
+    font-size: 24px;
+    animation: floatUp 3s ease-in-out forwards;
+    opacity: 0;
+}
+
+/* Animation bay lên */
+@keyframes floatUp {
+    0% {
+        transform: translateY(0) scale(0.5);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-150px) scale(1);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateY(-300px) scale(1.2);
+        opacity: 0;
+    }
+}
+
+#save-the-date {
+    background-color: #fefaf5;
+    padding: 50px 0;
+}
+
+.box-shadow {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.text-primary {
+    color: #c04b65 !important; /* Màu chữ tên cô dâu chú rể */
+}
+
+.text-secondary {
+    color: #666;
+}
+
+.btn-primary {
+    background-color: #e76f81;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #d4566e;
+}
+
+.countdown {
+    font-size: 20px;
+    font-weight: bold;
+    color: #c04b65;
+}
+
+#save-the-date .row {
+    gap: 20px; /* Thêm khoảng cách giữa hai box */
+}
+
+/* Calendar Styling */
+.calendar {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.calendar th, .calendar td {
+    width: 14%;
+    text-align: center;
+    padding: 8px;
+    font-size: 16px;
+}
+
+.calendar th {
+    color: #c04b65;
+    font-weight: bold;
+}
+
+.calendar td {
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.calendar .today {
+    background-color: #c04b65;
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+}
+
+.calendar .highlight {
+    background-color: #ffd6da;
+    color: #c04b65;
+    font-weight: bold;
+    border-radius: 50%;
+}
+#save-the-date .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch; /* Đảm bảo các cột có chiều cao bằng nhau */
+    gap: 20px;
+}
+
+#save-the-date .col-md-5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1; /* Giúp hai cột bằng nhau */
+}
+
+.box-shadow {
+    flex: 1; /* Kéo dài cả hai box để có cùng chiều cao */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.bride-groom-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.person {
+    text-align: center;
+    width: 200px;
+}
+
+.person img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #f8d7da;
+    display: block;
+    margin: 0 auto;
+}
+.schedule {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.event {
+    background: #ffeeee;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.event-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #f8d7da;
+    margin-bottom: 10px;
+}
+
+.event-content h3 {
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.event-content p {
+    font-size: 14px;
+    color: #555;
+}
+/* Phần form gửi lời chúc */
+.wish-container {
+    text-align: center;
+    background: #ffeeee;
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    margin: auto;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.wish-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.wish-container input,
+.wish-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.wish-container button {
+    background: #ff6680;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.wish-container button:hover {
+    background: #ff4d6a;
+}
+
+/* Phần album ảnh */
+.album-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.album-grid {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.album-grid img {
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Phần hiển thị lời chúc */
+.wishes-display {
+    text-align: center;
+    margin-top: 30px;
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    width: 70%;
+    margin: auto;
+}
+
+.wishes-display h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+#wishesList {
+    list-style: none;
+    padding: 0;
+}
+
+#wishesList li {
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+/* Ẩn form khi chưa click */
+.hidden {
+    display: none;
+}
+
+/* Tạo khoảng cách giữa các phần */
+.wish-button-container {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.wish-container {
+    text-align: center;
+    background: #ffe6e6;
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    margin: 20px auto;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Tạo khoảng cách giữa các input */
+.wish-container input,
+.wish-container textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.wish-container button {
+    background: #ff6680;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.wish-container button:hover {
+    background: #ff4d6a;
+}
+/* Style cho button "Gửi lời chúc" */
+.wish-button-container button {
+    background: #ff6680;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect */
+.wish-button-container button:hover {
+    background: #ff4d6a;
+    transform: scale(1.05);
+}
+
+/* Active effect khi nhấn giữ */
+.wish-button-container button:active {
+    transform: scale(0.95);
+}
+
+/* Form gửi lời chúc */
+#wish-form-section {
+    margin-top: 20px;
+    padding: 20px;
+    background: #fff5f5;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Tiêu đề form */
+#wish-form-section h3 {
+    color: #d63384;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Input và Textarea */
+#wish-form input,
+#wish-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #ff8fab;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+/* Hiệu ứng khi focus */
+#wish-form input:focus,
+#wish-form textarea:focus {
+    border-color: #d63384;
+    outline: none;
+    box-shadow: 0px 0px 8px rgba(214, 51, 132, 0.3);
+}
+
+/* Căn giữa button */
+#wish-form button {
+    display: block;
+    margin: 10px auto 0 auto; /* Căn giữa theo chiều ngang */
+    width: 80%; /* Tùy chỉnh độ rộng */
+    background: #d63384;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#wish-form button:hover {
+    background: #b82a6f;
+}
+
+/* Khu vực hiển thị lời chúc */
+#wish-section {
+    margin-top: 30px;
+    padding: 20px;
+    background: #ffe6eb;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Tiêu đề danh sách lời chúc */
+#wish-section h3 {
+    color: #d63384;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Mỗi lời chúc */
+.wish-item {
+    background: white;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+}
+
+/* Nút xóa lời chúc */
+.remove-wish {
+    cursor: pointer;
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.remove-wish:hover {
+    color: darkred;
+    transform: scale(1.2);
+}

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+</head>
+<body>
+
+    <div id="heart-container"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Wedding</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">Thông tin</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#events">Sự kiện</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Album</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#wishes">Lời chúc</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner Slider -->
+<section id="banner">
+    <div id="weddingCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/banner1.jpg" class="d-block w-100" alt="Banner 1">
+                <div class="carousel-caption">
+                    <h2>Xua</h2>
+                    <p>Save the Date - 21/05/2025</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/banner2.jpg" class="d-block w-100" alt="Banner 2">
+                <div class="carousel-caption">
+                    <h2>Vinh Hào & Xuân Nhi</h2>
+                    <p>Save the Date - 21/05/2025</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/banner3.jpg" class="d-block w-100" alt="Banner 3">
+                <div class="carousel-caption">
+                    <h2>Vinh Hào & Xuân Nhi</h2>
+                    <p>Save the Date - 21/05/2025</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/banner4.jpg" class="d-block w-100" alt="Banner 4">
+                <div class="carousel-caption">
+                    <h2>Vinh Hào & Xuân Nhi</h2>
+                    <p>Save the Date - 21/05/2025</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Nút điều hướng -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#weddingCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#weddingCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </div>
+</section>
+
+
+    <!-- Save the Date & Countdown -->
+    <section id="save-the-date" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <!-- Save the Date Box -->
+                <div class="col-md-5 text-center">
+                    <div class="p-4 box-shadow rounded bg-white">
+                        <h2 class="fw-bold text-dark">Save the Date</h2>
+                        <p class="text-muted">For the wedding of</p>
+                        <h3 class="text-primary fw-bold">Như Sơn & Xuân Sương</h3>
+                        <p class="text-secondary">
+                            Một lời chúc của bạn chắc chắn sẽ làm cho đám cưới của chúng tôi có thêm niềm hạnh phúc!
+                        </p>
+                        <button class="btn btn-primary">Gửi lời chúc →</button>
+                    </div>
+                </div>
+
+                <!-- Calendar & Countdown Box -->
+                <div class="col-md-5 text-center">
+                    <div class="p-4 box-shadow rounded bg-white">
+                        <h4 class="fw-bold text-dark">MAY / 2025</h4>
+
+                        <!-- Calendar -->
+                        <table class="calendar">
+                            <thead>
+                                <tr>
+                                    <th>Mon</th>
+                                    <th>Tue</th>
+                                    <th>Wed</th>
+                                    <th>Thu</th>
+                                    <th>Fri</th>
+                                    <th>Sat</th>
+                                    <th>Sun</th>
+                                </tr>
+                            </thead>
+                            <tbody id="calendar-body">
+                                <!-- Calendar days sẽ được render bằng JS -->
+                            </tbody>
+                        </table>
+
+                        <!-- Countdown Timer -->
+                        <div class="countdown mt-3">
+                            <span id="days">179</span> Ngày
+                            <span id="hours">22</span> Giờ
+                            <span id="minutes">42</span> Phút
+                            <span id="seconds">52</span> Giây
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="bride-groom">
+        <h2>Về Cô Dâu & Chú Rể</h2>
+        <p>Chúng tôi rất vui mừng được chia sẻ khoảnh khắc đặc biệt này cùng bạn.</p>
+        <div class="bride-groom-container">
+            <div class="person">
+                <img src="images/groom.jpg" alt="Vinh Hao">
+                <h3>Vinh Hao</h3>
+                <p>Chú rể</p>
+            </div>
+            <div class="person">
+                <img src="images/bride.jpg" alt="Xuan Nhi">
+                <h3>Xuan Nhi</h3>
+                <p>Cô dâu</p>
+            </div>
+        </div>
+    </section>
+    
+    <div class="schedule">
+        <div class="event">
+            <img src="assets/img/bride.jpg" alt="Cô dâu" class="event-img">
+            <div class="event-content">
+                <h3>Lễ Vu Quy</h3>
+                <p>Ngày 21/09/2024 - Tại nhà gái</p>
+            </div>
+        </div>
+        
+        <div class="event">
+            <img src="assets/img/groom.jpg" alt="Chú rể" class="event-img">
+            <div class="event-content">
+                <h3>Lễ Thành Hôn</h3>
+                <p>Ngày 22/09/2024 - Tại nhà trai</p>
+            </div>
+        </div>
+    </div>
+    
+<!-- Button mở form gửi lời chúc -->
+<button id="show-wish-form" class="btn btn-primary">Gửi lời chúc →</button>
+
+<!-- Form gửi lời chúc (Ẩn mặc định) -->
+<section id="wish-form-section" style="display: none;">
+    <h3>Gửi Lời Chúc</h3>
+    <form id="wish-form">
+        <input type="text" id="name" placeholder="Họ và tên" required>
+        <textarea id="message" placeholder="Nhập lời chúc..." required></textarea>
+        <button type="submit" class="btn btn-success">Gửi lời chúc</button>
+    </form>
+</section>
+
+    <!-- Album ảnh -->
+    <section id="gallery" class="container my-5 text-center">
+        <h2>Album Ảnh</h2>
+        <div class="row">
+            <div class="col-md-4"><img src="assets/photo1.jpg" class="img-fluid"></div>
+            <div class="col-md-4"><img src="assets/photo2.jpg" class="img-fluid"></div>
+            <div class="col-md-4"><img src="assets/photo3.jpg" class="img-fluid"></div>
+            <div class="col-md-4"><img src="assets/photo1.jpg" class="img-fluid"></div>
+            <div class="col-md-4"><img src="assets/photo2.jpg" class="img-fluid"></div>
+            <div class="col-md-4"><img src="assets/photo3.jpg" class="img-fluid"></div>
+            <div class="col-md-4"><img src="assets/photo1.jpg" class="img-fluid"></div>
+            <div class="col-md-4"><img src="assets/photo2.jpg" class="img-fluid"></div>
+            <div class="col-md-4"><img src="assets/photo3.jpg" class="img-fluid"></div>
+            <div class="col-md-4"><img src="assets/photo1.jpg" class="img-fluid"></div>
+            <div class="col-md-4"><img src="assets/photo2.jpg" class="img-fluid"></div>
+            <div class="col-md-4"><img src="assets/photo3.jpg" class="img-fluid"></div>
+            <div class="col-md-4"><img src="assets/photo1.jpg" class="img-fluid"></div>
+            <div class="col-md-4"><img src="assets/photo2.jpg" class="img-fluid"></div>
+            <div class="col-md-4"><img src="assets/photo3.jpg" class="img-fluid"></div>
+        </div>
+    </section>
+
+<!-- Danh sách lời chúc (Ẩn nếu chưa có lời chúc) -->
+<section id="wish-section" style="display: none;">
+    <h3>Lời Chúc</h3>
+    <div id="wish-list"></div>
+</section>
+
+    <script src="main.js"></script>
+
+</body>
+<!-- Footer -->
+<footer class="wedding-footer">
+    <div class="footer-content">
+        <div class="footer-image">
+            <img src="images/couple-photo.png" alt="Bride and Groom">
+        </div>
+        <p class="footer-text">Thank you for your visiting!</p>
+        <p class="footer-text">See you soon on upcoming events!</p>
+    </div>
+</footer>
+
+</html>
