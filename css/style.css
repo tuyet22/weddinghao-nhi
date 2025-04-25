@@ -2528,7 +2528,7 @@ img {
 }
 
 .section-bg-img {
-  background: url('../images/bg.png') !important;
+  background: url('') !important;
 }
 
 .section-bg-color {
