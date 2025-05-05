@@ -30,13 +30,14 @@ p {
 
 h1,
 h2,
-h3,
 h4,
 h5,
 h6 {
   color: #202a41;
 }
-
+h3 {
+  color:#ffff
+}
 ul {
   padding-left: 0;
   margin: 0;
@@ -74,7 +75,7 @@ img {
 }
 
 .section-padding {
-  padding: 120px 0;
+  padding: 50px 0;
 }
 
 @media (max-width: 991px) {
@@ -379,7 +380,7 @@ img {
 }
 
 .theme-btn {
-  background-color: #c89d9c;
+  background-color: #E63946;
   color: #fff;
   padding: 15px 50px 15px 25px;
   font-weight: 600;
@@ -500,7 +501,7 @@ img {
 }
 
 .preloader .middle .fi:before {
-  color: rgb(200, 157, 156);
+  color: rgb(255, 0, 0);
   font-size: 22px;
 }
 
@@ -982,7 +983,7 @@ img {
 
 .header-style-1 .site-logo h1 i {
   font-size: 1.5rem;
-  color: #c89d9c;
+  color: #E63946;
 }
 
 @media (max-width: 991px) {
@@ -1061,7 +1062,7 @@ img {
 }
 
 .navbar-header .logo a {
-  color: #c89d9c;
+  color: #E63946;
   font-size: 1.8rem;
 }
 
@@ -1085,7 +1086,7 @@ img {
 .hero-slider {
   width: 100%;
   height: calc(100vh - 210px);
-  min-height: 630px;
+  min-height: 900px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1273,7 +1274,7 @@ img {
 
 .hero-style-1 .slide-main-text .slide-title i {
   font-size: 3rem;
-  color: #dfa09f;
+  color: #E63946;
 }
 
 @media (max-width: 450px) {
@@ -1433,7 +1434,7 @@ img {
   float: left;
   text-align: center;
   padding: 30px 15px 0;
-  color: rgb(200, 157, 156);
+  color:rgb(230, 57, 70) ;
 }
 
 #clock .box > div {
@@ -1728,7 +1729,7 @@ img {
   height: 30px;
   line-height: 20px;
   padding: 5px;
-  background-color: rgb(200, 157, 156);
+  background-color: rgb(230, 57, 70)  ;
   color: #fff;
   border-radius: 50%;
 }
@@ -1763,7 +1764,7 @@ img {
   position: absolute;
   left: 50px;
   top: 50px;
-  border: 5px solid rgb(129 103 103 / 40%);
+  border: 5px solid rgb(234, 209, 194);
 }
 
 @media (max-width: 767px) {
@@ -2420,7 +2421,7 @@ img {
 
 .event-section .event-grids h3:before {
   content: '';
-  background: #c89d9c;
+  background: #a37c7b;
   width: 120px;
   height: 2px;
   position: absolute;
@@ -2901,4 +2902,54 @@ img {
   display: flex;
   justify-content: center;
   position: relative;
+}
+/* Ẩn loader và thông báo ban đầu */
+#loader,
+#success,
+#error {
+  display: none;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+#success {
+  color: green;
+}
+
+#error {
+  color: red;
+}
+
+/* Giao diện lời chúc */
+.wish-box-item {
+  padding: 15px;
+  border-radius: 10px;
+  background: #fff;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.4s ease;
+}
+
+.wish-box-item.bg {
+  background: #f9f9f9;
+}
+
+.wish-box-item.fade-in {
+  animation: fadeIn 0.5s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+.contact-form {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.wish-box {
+  max-width: 800px;
+  margin: 0 auto;
 }
