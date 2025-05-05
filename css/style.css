@@ -30,14 +30,13 @@ p {
 
 h1,
 h2,
+h3,
 h4,
 h5,
 h6 {
   color: #202a41;
 }
-h3 {
-  color:#ffff
-}
+
 ul {
   padding-left: 0;
   margin: 0;
@@ -2303,7 +2302,7 @@ img {
   }
 }
 
-.event-section .top-area:before {
+/*.event-section .top-area:before {
   content: '';
   background: rgba(0, 0, 0, 0.3);
   width: 100%;
@@ -2311,7 +2310,7 @@ img {
   position: absolute;
   left: 0;
   top: 0;
-}
+}*/
 
 .event-section .top-area h2,
 .event-section .top-area p {
