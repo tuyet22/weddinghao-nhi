@@ -307,7 +307,7 @@ img {
 
 .section-title:before {
   content: '';
-  background: url('../images/sec-title-flower.png') center center/cover
+  background: url('../img/sec-title-flower.png') center center/cover
     no-repeat local;
   width: 126px;
   height: 59px;
@@ -457,7 +457,7 @@ img {
 }
 
 .form select {
-  background: url(../images/select-icon.png) no-repeat right center;
+  background: url(../img/select-icon.png) no-repeat right center;
   display: inline-block;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -820,7 +820,7 @@ img {
   }
 
   .site-header .navbar-header button {
-    background-color: #c89d9c;
+    background-color: #E63946;
     width: 40px;
     height: 35px;
     border: 0;
@@ -1522,7 +1522,7 @@ img {
 
 /* footer */
 .footer-style-1 {
-  background: url('../images/footer-shape.png') center bottom/100% no-repeat
+  background: url('../img/footer-shape.png') center bottom/100% no-repeat
     local;
   text-align: center;
   height: 100vh;
@@ -1553,7 +1553,7 @@ img {
 }
 
 .footer-style-1 .couple-pic {
-  background: url('../images/footer-couple-pic-frame.png') center center/cover
+  background: url('../img/footer-couple-pic-frame.png') center center/cover
     no-repeat local;
   width: 511px;
   height: 470px;
@@ -1782,7 +1782,7 @@ img {
 }
 
 .invitation-section .invitation-box .left-vec {
-  background: url('../images/invitation-left-img.png') center center/cover
+  background: url('../img/invitation-left-img.png') center center/cover
     no-repeat local;
   width: 220px;
   height: 414px;
@@ -1803,7 +1803,7 @@ img {
 }
 
 .invitation-section .invitation-box .right-vec {
-  background: url('../images/invitation-right-image.png') center center/cover
+  background: url('../img/invitation-right-image.png') center center/cover
     no-repeat local;
   width: 400px;
   height: 508px;
@@ -2157,7 +2157,7 @@ img {
 
 .contact-section .contact-form:after {
   content: '';
-  background: url('../images/rsvp-flower.png') center center/cover no-repeat
+  background: url('../img/rsvp-flower.png') center center/cover no-repeat
     local;
   width: 982px;
   height: 405px;
@@ -2236,7 +2236,7 @@ img {
 
 .contact-section .form select {
   color: #797979;
-  background: #fbfbfb url(../images/select-icon.png) no-repeat calc(100% - 15px)
+  background: #fbfbfb url(../img/select-icon.png) no-repeat calc(100% - 15px)
     center;
   opacity: 1;
 }
@@ -2302,7 +2302,7 @@ img {
   }
 }
 
-/*.event-section .top-area:before {
+.event-section .top-area:before {
   content: '';
   background: rgba(0, 0, 0, 0.3);
   width: 100%;
@@ -2310,7 +2310,7 @@ img {
   position: absolute;
   left: 0;
   top: 0;
-}*/
+}
 
 .event-section .top-area h2,
 .event-section .top-area p {
@@ -2528,7 +2528,7 @@ img {
 }
 
 .section-bg-img {
-  background: url('') !important;
+  background: url('../img/bg.png') !important;
 }
 
 .section-bg-color {
@@ -2919,36 +2919,3 @@ img {
   color: red;
 }
 
-/* Giao diện lời chúc */
-.wish-box-item {
-  padding: 15px;
-  border-radius: 10px;
-  background: #fff;
-  margin-bottom: 15px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  transition: all 0.4s ease;
-}
-
-.wish-box-item.bg {
-  background: #f9f9f9;
-}
-
-.wish-box-item.fade-in {
-  animation: fadeIn 0.5s ease forwards;
-  opacity: 0;
-}
-
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
-}
-.contact-form {
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-.wish-box {
-  max-width: 800px;
-  margin: 0 auto;
-}
