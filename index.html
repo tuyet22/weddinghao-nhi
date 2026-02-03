@@ -24,10 +24,12 @@
       property="og:description"
       content="Xuân Nhị & Vĩnh Hảo - Our wedding date: 2024-09-22 | Yêu sâu sắc sẽ mang lại cho bạn sức mạnh, trong khi yêu ai đó sâu sắc sẽ cho bạn dũng khí"
     />
-    <meta property="og:image" content="./img/3014.jpg" />
-    <meta property="og:image:url" content="./img/3014.jpg" />
-    <meta property="og:image:secure_url" content="./img/3014.jpg" />
+    <meta property="og:image" content="./img/og-image.jpg" />
+    <meta property="og:image:url" content="./img/og-image.jpg" />
+    <meta property="og:image:secure_url" content="./img/og-image.jpg" />
     <link rel="shortcut icon" type="image/x-icon" href="./img/wedding.ico" />
+    <link rel="preload" href="./img/NPL_0778.webp" as="image" type="image/webp" />
+    <link rel="preconnect" href="https://cdn.biihappy.com" />
     <link href="./css/libs.css" rel="stylesheet" />
     <link href="./common/calendar.css" rel="stylesheet" />
     <link href="./css/style.css" rel="stylesheet" />
@@ -109,20 +111,20 @@
             <div class="swiper-slide">
               <div
                 class="slide-inner slide-bg-image"
-                data-background="img/NPL_0778.jpg"
+                data-background="img/NPL_0778.webp"
               ></div>
             </div>
             <div class="swiper-slide">
               <div
                 class="slide-inner slide-bg-image"
-                data-background="./img/NPL_0552.jpg"
+                data-background="./img/NPL_0552.webp"
               ></div>
             </div>
 
             <div class="swiper-slide">
               <div
                 class="slide-inner slide-bg-image"
-                data-background="./img/NPL_0810.jpg"
+                data-background="./img/NPL_0810.webp"
               ></div>
             </div>
           </div>
@@ -250,10 +252,14 @@
               <div class="couple-area">
                 <div class="couple-row clearfix">
                   <div class="img-holder">
-                    <img
-                      src="img/NPL_0686.jpg"
-                      alt="Representative photo of the groom"
-                    />
+                    <picture>
+                      <source srcset="img/thumbs/NPL_0686.webp" type="image/webp" />
+                      <img
+                        src="img/thumbs/NPL_0686.jpg"
+                        alt="Representative photo of the groom"
+                        loading="lazy"
+                      />
+                    </picture>
                   </div>
                   <div class="details">
                     <div class="inner">
@@ -280,10 +286,14 @@
                     </div>
                   </div>
                   <div class="img-holder">
-                    <img
-                      src="img/NPL_0614.jpg"
-                      alt="Representative photo of the bride"
-                    />
+                    <picture>
+                      <source srcset="img/thumbs/NPL_0614.webp" type="image/webp" />
+                      <img
+                        src="img/thumbs/NPL_0614.jpg"
+                        alt="Representative photo of the bride"
+                        loading="lazy"
+                      />
+                    </picture>
                   </div>
                 </div>
               </div>
@@ -328,7 +338,7 @@
       <div
       class="top-area"
       style="
-        background: url(./img/NPL_0552.jpg) center center/cover no-repeat
+        background: url(./img/NPL_0552.webp) center center/cover no-repeat
           local;
       "
     >
@@ -345,10 +355,14 @@
                 <div class="grid section-bg-img">
                   <h3>LỄ VU QUY</h3>
                   <div class="image-wrap">
-                    <img
-                      src="./img/NPL_0791.jpg"
-                      alt="Photo of the women's house celebrating the ceremony"
-                    />
+                    <picture>
+                      <source srcset="./img/thumbs/NPL_0791.webp" type="image/webp" />
+                      <img
+                        src="./img/thumbs/NPL_0791.jpg"
+                        alt="Photo of the women's house celebrating the ceremony"
+                        loading="lazy"
+                      />
+                    </picture>
                   </div>
                   <p><strong>08:30 21/05/2025</strong></p>
                   <p>thôn Mỹ Phú, xã Hòa Mỹ Tây, huyện Tây Hòa, tỉnh Phú Yên</p>
@@ -379,10 +393,14 @@
                 <div class="grid section-bg-img">
                   <h3>LỄ THÀNH HÔN</h3>
                   <div class="image-wrap">
-                    <img
-                      src="./img/NPL_0567.jpg"
-                      alt="Photo of the man's house at the wedding ceremony"
-                    />
+                    <picture>
+                      <source srcset="./img/thumbs/NPL_0567.webp" type="image/webp" />
+                      <img
+                        src="./img/thumbs/NPL_0567.jpg"
+                        alt="Photo of the man's house at the wedding ceremony"
+                        loading="lazy"
+                      />
+                    </picture>
                   </div>
                   <p><strong>11:00 21/05/2025</strong></p>
                   <p>
@@ -437,80 +455,104 @@
               <div class="gallery-container gallery-fancybox masonry-gallery">
                 <div class="grid grid-item">
                   <a
-                    href="./img/NPL_0980.jpg"
+                    href="./img/NPL_0980.webp"
                     class="fancybox"
                     data-fancybox-group="gall-1"
                   >
-                    <img
-                      src="./img/NPL_0980.jpg"
-                      alt
-                      class="img img-responsive"
-                    />
+                    <picture>
+                      <source srcset="./img/thumbs/NPL_0980.webp" type="image/webp" />
+                      <img
+                        src="./img/thumbs/NPL_0980.jpg"
+                        alt="Wedding gallery photo"
+                        class="img img-responsive"
+                        loading="lazy"
+                      />
+                    </picture>
                   </a>
                 </div>
                 <div class="grid grid-item">
                   <a
-                    href="./img/NPL_0501.jpg"
+                    href="./img/NPL_0501.webp"
                     class="fancybox"
                     data-fancybox-group="gall-1"
                   >
-                    <img
-                      src="./img/NPL_0501.jpg"
-                      alt
-                      class="img img-responsive"
-                    />
+                    <picture>
+                      <source srcset="./img/thumbs/NPL_0501.webp" type="image/webp" />
+                      <img
+                        src="./img/thumbs/NPL_0501.jpg"
+                        alt="Wedding gallery photo"
+                        class="img img-responsive"
+                        loading="lazy"
+                      />
+                    </picture>
                   </a>
                 </div>
                 <div class="grid grid-item">
                   <a
-                    href="./img/NPL_0874.jpg"
+                    href="./img/NPL_0874.webp"
                     class="fancybox"
                     data-fancybox-group="gall-1"
                   >
-                    <img
-                      src="./img/NPL_0874.jpg"
-                      alt
-                      class="img img-responsive"
-                    />
+                    <picture>
+                      <source srcset="./img/thumbs/NPL_0874.webp" type="image/webp" />
+                      <img
+                        src="./img/thumbs/NPL_0874.jpg"
+                        alt="Wedding gallery photo"
+                        class="img img-responsive"
+                        loading="lazy"
+                      />
+                    </picture>
                   </a>
                 </div>
                 <div class="grid grid-item">
                   <a
-                    href="./img/NPL_0634.jpg"
+                    href="./img/NPL_0634.webp"
                     class="fancybox"
                     data-fancybox-group="gall-1"
                   >
-                    <img
-                      src="./img/NPL_0634.jpg"
-                      alt
-                      class="img img-responsive"
-                    />
+                    <picture>
+                      <source srcset="./img/thumbs/NPL_0634.webp" type="image/webp" />
+                      <img
+                        src="./img/thumbs/NPL_0634.jpg"
+                        alt="Wedding gallery photo"
+                        class="img img-responsive"
+                        loading="lazy"
+                      />
+                    </picture>
                   </a>
                 </div>
                 <div class="grid grid-item">
                   <a
-                    href="./img/NPL_0791.jpg"
+                    href="./img/NPL_0791.webp"
                     class="fancybox"
                     data-fancybox-group="gall-1"
                   >
-                    <img
-                      src="./img/NPL_0791.jpg"
-                      alt
-                      class="img img-responsive"
-                    />
+                    <picture>
+                      <source srcset="./img/thumbs/NPL_0791.webp" type="image/webp" />
+                      <img
+                        src="./img/thumbs/NPL_0791.jpg"
+                        alt="Wedding gallery photo"
+                        class="img img-responsive"
+                        loading="lazy"
+                      />
+                    </picture>
                   </a>
                 </div>
                 <div class="grid grid-item">
                   <a
-                    href="./img/NPL_0722.jpg"
+                    href="./img/NPL_0722.webp"
                     class="fancybox"
                     data-fancybox-group="gall-1"
                   >
-                    <img
-                      src="./img/NPL_0722.jpg"
-                      alt
-                      class="img img-responsive"
-                    />
+                    <picture>
+                      <source srcset="./img/thumbs/NPL_0722.webp" type="image/webp" />
+                      <img
+                        src="./img/thumbs/NPL_0722.jpg"
+                        alt="Wedding gallery photo"
+                        class="img img-responsive"
+                        loading="lazy"
+                      />
+                    </picture>
                   </a>
                 </div>
             </div>
@@ -708,10 +750,14 @@
       <footer class="site-footer footer-style-1">
         <div class="inner">
           <div class="couple-pic">
-            <img
-              src="./img/NPL_0537.jpg"
-              alt="Vĩnh Hảo & Xuân Nhị Wedding information!"
-            />
+            <picture>
+              <source srcset="./img/thumbs/NPL_0537.webp" type="image/webp" />
+              <img
+                src="./img/thumbs/NPL_0537.jpg"
+                alt="Vĩnh Hảo & Xuân Nhị Wedding information!"
+                loading="lazy"
+              />
+            </picture>
           </div>
           <h2>Thank you for your visiting!</h2>
           <h2 style="margin-top: -60px">See you soon on upcomming events!</h2>
